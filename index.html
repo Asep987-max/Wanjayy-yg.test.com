@@ -1,69 +1,68 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="id">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Simple Landing Page</title>
+  <title>Wanjayy Landing Page</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="container">
-    <div class="logo">MyBrand</div>
+    <div class="logo">Wanjayy</div>
     <nav>
       <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#features">Features</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#features">Fitur</a></li>
+        <li><a href="#galeri">Galeri</a></li>
+        <li><a href="#contact">Kontak</a></li>
       </ul>
     </nav>
-  </header>
-
-  <section class="hero" id="home">
-    <img src="images/hero.jpg" alt="Hero Image">
+  </header>  <section class="hero">
+    <img src="images/hero.jpg" alt="Hero" />
     <div class="overlay">
-      <h1>Welcome to My Landing Page</h1>
-      <p>Discover amazing features and great design.</p>
-      <a href="#features" class="cta-button">Explore Features</a>
+      <h1>Selamat Datang di Wanjayy</h1>
+      <p>Website modern, interaktif, dan responsif</p>
+      <a href="#features" class="cta-button">Jelajahi Sekarang</a>
     </div>
-  </section>
-
-  <section class="container features" id="features">
-    <div class="feature-item">
-      <img src="images/feature1.jpg" alt="Feature 1">
-      <h3>Feature One</h3>
-      <p>Short description of feature one.</p>
+  </section>  <section id="features" class="container features">
+    <div class="feature-item reveal">
+      <img src="images/feature1.jpg" alt="Cepat & Ringan" />
+      <h3>Cepat & Ringan</h3>
+      <p>Performa tinggi dan optimal di semua perangkat.</p>
     </div>
-    <div class="feature-item">
-      <img src="images/feature2.jpg" alt="Feature 2">
-      <h3>Feature Two</h3>
-      <p>Short description of feature two.</p>
+    <div class="feature-item reveal">
+      <img src="images/feature2.jpg" alt="Desain Modern" />
+      <h3>Desain Modern</h3>
+      <p>Estetika bersih dan user-friendly.</p>
     </div>
-    <div class="feature-item">
-      <img src="images/feature3.jpg" alt="Feature 3">
-      <h3>Feature Three</h3>
-      <p>Short description of feature three.</p>
+    <div class="feature-item reveal">
+      <img src="images/feature3.jpg" alt="Mudah Dikelola" />
+      <h3>Mudah Dikelola</h3>
+      <p>Kode modular, terstruktur, dan mudah dikembangkan.</p>
     </div>
-  </section>
-
-  <section class="container contact-form" id="contact">
-    <h2>Contact Us</h2>
-    <form action="#" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-      <button type="submit">Send Message</button>
+  </section>  <section id="galeri" class="container features">
+    <div class="feature-item reveal">
+      <img src="images/gallery1.jpg" alt="Galeri 1" />
+      <h3>Kegiatan 1</h3>
+      <p>Dokumentasi momen penting bersama tim.</p>
+    </div>
+    <div class="feature-item reveal">
+      <img src="images/gallery2.jpg" alt="Galeri 2" />
+      <h3>Kegiatan 2</h3>
+      <p>Aktivitas lapangan dan kolaborasi kreatif.</p>
+    </div>
+    <div class="feature-item reveal">
+      <img src="images/gallery3.jpg" alt="Galeri 3" />
+      <h3>Kegiatan 3</h3>
+      <p>Proyek yang telah diselesaikan dengan sukses.</p>
+    </div>
+  </section>  <section id="contact" class="container contact-form reveal">
+    <h2>Hubungi Kami</h2>
+    <form onsubmit="event.preventDefault(); alert('Pesan berhasil dikirim!');">
+      <input type="text" name="name" placeholder="Nama Anda" required />
+      <input type="email" name="email" placeholder="Email Anda" required />
+      <textarea name="message" rows="4" placeholder="Tulis pesan Anda di sini..." required></textarea>
+      <button type="submit">Kirim Pesan</button>
     </form>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 MyBrand. All rights reserved.</p>
-  </footer>
-
-  <script>
-    document.querySelector('form').addEventListener('submit', function(e) {
-      e.preventDefault();
-      alert('Thank you for contacting us!');
-    });
-  </script>
-</body>
+  </section>  <footer>
+    <p>&copy; 2025 Wanjayy. All rights reserved.</p>
+  </footer>  <script src="script.js"></script></body>
 </html>
